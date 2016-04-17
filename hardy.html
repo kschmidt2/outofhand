@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out of Hand</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <link href="css/flat.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <link href="css/ie8fix.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.timeline.min.js"></script>
+    <script type="text/javascript" src="js/image.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+
+
+
+</head>
+<body>
+
+  <div id="header">
+    <!-- <div id="view-intro" class="hidden-xs"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i> Introduction</div> -->
+    <div id="logo-timeline">
+      <a href="index.html"><img src="images/logo.png" class="img-responsive logo-resize"></img></a>
+    </div>
+    <!-- <div id="header-text">Media coverage of domestic violence in the NFL</div> -->
+    <a href="rice.html"><div id="view-other">The Rice Story <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></div></a>
+  </div>
+
+    <h1>The Hardy Story</h1>
+    <div id="intro">
+      <p>This is where the info goes. This is where the info goes. This is where the info goes. This is where the info goes. This is where the info goes. This is where the info goes. This is where the info goes.</p>
+    </div>
+
+    <script type="text/javascript">
+
+    $(window).load(function() {
+    	// light
+    	$('.tl1').timeline({
+    		openTriggerClass : '.read_more',
+    		startItem : 'first',
+    		closeText : 'x',
+    		ajaxFailMessage: 'This ajax fail is made on purpose. You can add your own message here, just remember to escape single quotes if you\'re using them.'
+    	});
+    	$('.tl1').on('ajaxLoaded.timeline', function(e){
+    		var height = e.element.height()-60-e.element.find('h2').height();
+    		e.element.find('.timeline_open_content span').css('max-height', height).mCustomScrollbar({
+    			autoHideScrollbar:true,
+    			theme:"light-thin"
+    		});
+    	});
+
+    });
+
+
+    </script>
+
+    <!-- BEGIN TIMELINE -->
+    <div class="timeline-container">
+      <div class="timelineLoader">
+      	<img src="images/timeline/loadingAnimation.gif" />
+      </div>
+    <div class="timelineFlat tl1">
+    		<div class="item" data-id="13/05/2014" data-description="May 13">
+    			<img src="images/flat/default/1.jpg" alt=""/>
+    			<h2>MAY 13, 2014</h2>
+    			<span>Hardy accused of beating his girlfriend</span>
+    			<div class="read_more" data-id="13/05/2014">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="13/05/2014" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="15/07/2014" data-description="July 15">
+    			<img src="images/flat/default/2.jpg" alt=""/>
+    			<h2>JULY 15, 2014</h2>
+    			<span>Holder testifies “I was so scared I wanted to die”, Hardy found guilty by judge</span>
+    			<div class="read_more" data-id="15/07/2014">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="15/07/2014" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="15/09/2014" data-description="September 15">
+    			<img src="images/flat/default/3.jpg" alt=""/>
+    			<h2>SEPTEMBER 15, 2014</h2>
+    			<span>After playing in week one, Hardy is benched in light of the Ray Rice situation</span>
+    			<div class="read_more" data-id="15/09/2014">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="15/09/2014" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+
+    		<div class="item" data-id="17/09/2014" data-description="September 17">
+    			<img src="images/flat/default/4.jpg" alt=""/>
+    			<h2>SEPTEMBER 17, 2014</h2>
+    			<span>Hardy goes on exempt list as he awaits jury trial</span>
+    			<div class="read_more" data-id="17/09/2014">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="17/09/2014" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+
+    		<div class="item" data-id="09/02/2015" data-description="February 9">
+    			<img src="images/flat/default/5.jpg" alt=""/>
+    			<h2>FEBRUARY 9, 2015</h2>
+    			<span>Hardy’s case is dismissed after Holder doesn’t show up to testify on the appeal</span>
+    			<div class="read_more" data-id="09/02/2015">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="09/02/2015" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="04/03/2015" data-description="March 4">
+    			<img src="images/flat/default/6.jpg" alt=""/>
+    			<h2>MARCH 4, 2015</h2>
+    			<span>NFL conducts hearing to reinstate Greg Hardy</span>
+    			<div class="read_more" data-id="04/03/2015">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="04/03/2015" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="18/03/2015" data-description="March 18">
+    			<img src="images/flat/default/7.jpg" alt=""/>
+    			<h2>MARCH 18, 2015</h2>
+    			<span>Hardy signs with Cowboys for up to $13.1 million</span>
+    			<div class="read_more" data-id="18/03/2015">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="18/03/2015" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="06/04/2015" data-description="April 6">
+    			<img src="images/flat/default/8.jpg" alt=""/>
+    			<h2>APRIL 6, 2015</h2>
+    			<span>NC DA releases photos from domestic violence incident to NFL, NFLPA, but not to the public</span>
+    			<div class="read_more" data-id="06/04/2015">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="06/04/2015" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="22/04/2015" data-description="April 22">
+    			<img src="images/flat/default/9.jpg" alt=""/>
+    			<h2>APRIL 22, 2015</h2>
+    			<span>NFL suspends Hardy 10 games</span>
+    			<div class="read_more" data-id="22/04/2015">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="22/04/2015" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="24/04/2015" data-description="April 24">
+    			<img src="images/flat/default/10.jpg" alt=""/>
+    			<h2>APRIL 24, 2015</h2>
+    			<span>Hardy’s teammate calls him a woman beater</span>
+    			<div class="read_more" data-id="24/04/2015">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="24/04/2015" data-access="ajax-congftent-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="10/07/2015" data-description="July 10">
+    			<img src="images/flat/default/11.jpg" alt=""/>
+    			<h2>JULY 10, 2015</h2>
+    			<span>Hardy’s 10-game suspension reduced to four games</span>
+    			<div class="read_more" data-id="10/07/2015">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="10/07/2015" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+    		<div class="item" data-id="07/10/2015" data-description="October 7">
+    				<img src="images/flat/default/12.jpg" alt=""/>
+    			<h2>OCTOBER 7, 2015</h2>
+    			<span>Hardy makes first post-suspension media appearance</span>
+    			<div class="read_more" data-id="07/10/2015">Read more</div>
+    		</div>
+    		<div class="item_open" data-id="07/10/2015" data-access="ajax-content-no-image.html">
+    			<div class="item_open_content">
+    				<img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+    			</div>
+    		</div>
+
+        <div class="item" data-id="10/10/2015" data-description="October 10">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>OCTOBER 10, 2015</h2>
+          <span>TMZ posts stripper-heavy rap video Hardy made while suspended</span>
+          <div class="read_more" data-id="10/10/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="10/10/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="11/10/2015" data-description="October 11">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>OCTOBER 11, 2015</h2>
+          <span>Hardy returns to the Cowboys after serving his four-game suspension</span>
+          <div class="read_more" data-id="11/10/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="11/10/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="25/10/2015" data-description="October 25">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>OCTOBER 25, 2015</h2>
+          <span>Hardy attacks Cowboys coach on sideline</span>
+          <div class="read_more" data-id="25/10/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="25/10/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="25/10/2015" data-description="October 25">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>OCTOBER 25, 2015</h2>
+          <span>Jones calls Hardy inspirational after game</span>
+          <div class="read_more" data-id="25/10/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="25/10/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="26/10/2015" data-description="October 26">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>OCTOBER 26, 2015</h2>
+          <span>LESPN’s Skip Bayless defends Greg Hardy</span>
+          <div class="read_more" data-id="26/10/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="26/10/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="29/10/2015" data-description="October 29">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>OCTOBER 29, 2015</h2>
+          <span>Brandon Marshall says the Cowboys are failing Greg Hardy</span>
+          <div class="read_more" data-id="29/10/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="29/10/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="06/11/2015" data-description="November 6">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>NOVEMBER 6, 2015</h2>
+          <span>Deadspin publishes court documents and photos from Greg Hardy’s domestic violence arrest</span>
+          <div class="read_more" data-id="06/11/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="06/11/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="06/11/2015" data-description="November 6">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>NOVEMBER 6, 2015</h2>
+          <span>Jerry Jones releases statement supporting Hardy</span>
+          <div class="read_more" data-id="06/11/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="06/11/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="09/11/2015" data-description="November 9">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>NOVEMBER 9, 2015</h2>
+          <span>Cowboys owner/GM Jerry Jones says Hardy was a part of the best part of our team today</span>
+          <div class="read_more" data-id="09/11/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="09/11/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="09/11/2015" data-description="November 9">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>NOVEMBER 9, 2015</h2>
+          <span>Greg hardy avoids the media after the game</span>
+          <div class="read_more" data-id="09/11/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="09/11/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="09/11/2015" data-description="November 9">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>NOVEMBER 9, 2015</h2>
+          <span>Two Eagles players say they made it a point to go after Greg Hardy</span>
+          <div class="read_more" data-id="09/11/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="09/11/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="11/11/2015" data-description="November 11">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>NOVEMBER 11, 2015</h2>
+          <span>Greg Hardy accuses critics of discrimination</span>
+          <div class="read_more" data-id="11/11/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="11/11/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="23/11/2015" data-description="November 23">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>NOVEMBER 23, 2015</h2>
+          <span>ESPN reports that Jones and Hardy met to discuss his issues</span>
+          <div class="read_more" data-id="23/11/2015">Read more</div>
+        </div>
+        <div class="item_open" data-id="23/11/2015" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="03/01/2016" data-description="January 3">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>JANUARY 3, 2016</h2>
+          <span>Hardy says he would love to stay in Dallas</span>
+          <div class="read_more" data-id="03/01/2016">Read more</div>
+        </div>
+        <div class="item_open" data-id="03/01/2016" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="12/01/2016" data-description="January 12">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>JANUARY 12, 2016</h2>
+          <span>Cowboys teammate Jeremy Mincey says it was tough being on the Cowboys with Hardy</span>
+          <div class="read_more" data-id="12/01/2016">Read more</div>
+        </div>
+        <div class="item_open" data-id="12/01/2016" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="22/02/2016" data-description="February 22">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>FEBRUARY 22, 2016</h2>
+          <span>It is reported that the Cowboys are done with Hardy</span>
+          <div class="read_more" data-id="22/02/2016">Read more</div>
+        </div>
+        <div class="item_open" data-id="22/02/2016" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="item" data-id="04/04/2016" data-description="April 4">
+            <img src="images/flat/default/12.jpg" alt=""/>
+          <h2>APRIL 4, 2016</h2>
+          <span>Hardy says he’s never put his hands on a woman</span>
+          <div class="read_more" data-id="04/04/2016">Read more</div>
+        </div>
+        <div class="item_open" data-id="04/04/2016" data-access="ajax-content-no-image.html">
+          <div class="item_open_content">
+            <img class="ajaxloader" src="images/timeline/loadingAnimation.gif" alt="" />
+          </div>
+        </div>
+
+    </div> <!-- /END TIMELINE -->
+
+  </div>
+
+
+
+</body>
+</html>
