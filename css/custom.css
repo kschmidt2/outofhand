@@ -224,9 +224,9 @@ p {
   and (-webkit-min-device-pixel-ratio: 1) {
     #home {
       background-image: url('../images/mobilehome.png');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
+      background-size: 100vw;
+      background-attachment: scroll;
+      background-position: 100% center;
     }
     #logo {
       width: 100%;
@@ -275,6 +275,9 @@ p {
       bottom: 0;
       width: 50%;
       position: fixed;
+    }
+    a .rice-mobile, a .hardy-mobile {
+      color: white;
     }
     .timeline-container {
       width: 100%;
