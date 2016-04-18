@@ -175,13 +175,20 @@ p {
 }
 
 #intro {
-  width: 60%;
+  width: 65%;
   margin: 0 auto 20px;
 }
 
 .timeline-container {
   width: 80%;
   margin: 0 auto;
+}
+
+.photo-credit {
+  font-size: 6pt;
+  color: #888;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 /*media queries*/

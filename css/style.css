@@ -52,7 +52,7 @@ body {
 	text-align:center;
 }
 a {
-	text-decoration:none;
+	text-decoration:underline;
 	color:#3e1c5b;
 }
 

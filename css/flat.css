@@ -214,7 +214,7 @@
 	background:#eaeaea;
 	color:#000;
 	font-size:14px;
-	line-height:16px;
+	line-height:18px;
 	position: relative;
 }
 .timelineFlat .item.item_node_hover:before {
@@ -285,10 +285,12 @@
 	width:410px;
 	height:410px;
 	background:#eaeaea;
+  color:#000;
+	font-size:14px;
+	line-height:24px;
 	position:relative;
-	color:#777777;
 	z-index:2;
-
+  overflow: scroll;
 }
 
 .timelineFlat .item_open h2 {
