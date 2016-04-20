@@ -15,7 +15,7 @@ $(document).ready(function() {
     // // //Scrolling
     // css3: true,
     // scrollingSpeed: 700,
-    autoScrolling: false,
+    autoScrolling: true,
     fitToSection: false,
     // fitToSectionDelay: 1000,
     // scrollBar: false,
@@ -26,7 +26,7 @@ $(document).ready(function() {
     // loopHorizontal: true,
     // continuousVertical: false,
     // normalScrollElements: '#element1, .element2',
-    // scrollOverflow: true,
+    scrollOverflow: true,
     // touchSensitivity: 75,
     // normalScrollElementTouchThreshold: 5,
     // //
@@ -49,23 +49,24 @@ $(document).ready(function() {
 
     //events
     afterLoad: function(anchorLink, index){
+      var loadedSection = $(this);
       if(index == 2){
                 console.log("Section 2 loaded");
                 $('#rice-sidebar').fadeIn(100);
                 $('#rice-sidebar').animate({left: "0"}, 500);
                 $('#hardy-sidebar').fadeIn(100);
                 $('#hardy-sidebar').animate({right: "0"}, 500);
-                $('#logo').delay(500).fadeIn(100);
+                $('#logo').fadeIn(500);
                 $('.view-timeline-mobile').delay(500).fadeIn(100);
             }
 
     },
     onLeave: function(index, nextIndex, direction){
             var leavingSection = $(this);
-            console.log("onLeave()")
+            console.log("onLeave()");
 
             //after leaving section 5
-            if(index == 1 && direction == 'up'){
+            if(index == 2 && direction == 'up'){
                 console.log("Leaving section 2!");
                 $('#rice-sidebar').hide();
                 $('#rice-sidebar').animate({left: "-18%"}, 500);
