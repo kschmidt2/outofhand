@@ -44,7 +44,7 @@ $(document).ready(function() {
     // paddingTop: '1.5em',
     // paddingBottom: '3.5em',
     // fixedElements: '#header, #logo, #switch_language',
-    responsiveWidth: 1100,
+    // responsiveWidth: 1100,
     // responsiveHeight: 0,
 
     //events
